@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+<!--<link href="css/jquery.mobile.structure-1.4.0.min.css" rel="stylesheet" type="text/css">-->
+<link href="css/themes/merah.css" rel="stylesheet" type="text/css">
+<link href="css/themes/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+
+</head>
+<body>
+
+<!--PAGE 1-->
+
+<div data-role="page" id="page1">
+  <!--content -->
+  <div role="main" class="ui-content">
+  <center>
+  <h2>SELAMAT DATANG</h2>
+  <img src="image/logo.jpg" />
+  <h3>PORTAL 1SPREC CENTRE</h3>
+  <p><strong>PERBADANAN PENGURUSAN SISA PEPEJAL DAN PEMBERSIHAN AWAM (PPSPPA)</strong></p>
+	<a href="#page2" data-transition="slidefade" class="ui-btn ui-btn-inline">MASUK</a>
+	<a href="#pop1" data-rel="popup" data-transition="slidefade" class="ui-btn ui-btn-inline">PENAFIAN</a>
+	</center>
+	<div data-role="popup" id="pop1" align="center" data-dismissible="false">
+	<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	<h3>Penafian:</h3>
+	<p>Perbadanan Pengurusan Sisa Pepejal Dan Pembersihan Awam tidak bertanggungjawab di atas kehilangan atau kerosakan disebabkan penggunaan mana-mana maklumat yang diperolehi daripada laman ini.</p></div>
+  </div>
+  </div>
+  
+<!--PAGE 2-->
+
+<div data-role="page" id="page2">
+	<!--header -->
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Utama">
+	<h3>Portal 1SPREC</h3>
+	
+  </div>
+  
+  <!--content -->
+  <div role="main" class="ui-content" data-position="fixed">
+  <center><h3>Portal Jadual Kutipan dan Pembersihan Awam</h3></center>
+    <table border="0">
+	<tr align="justify" >
+	<td><img src="image/jadual.png" /></td>
+	<td><strong>SEMAKAN </strong></br> Melalui sistem ini, pengguna dapat melihat dan mengetahui Jadual Kutipan Sampah dan Pembersihan Awam bagi jalan, longkang & rumput.</td>
+	</tr>
+	<tr></tr>
+	<tr></tr>
+	<tr>
+	<td><img src="image/hubungi.png" /></td>
+	<td><strong>HUBUNGI</strong></br>TolFree:1-800-88-7472</br>Centre:03-22459292</br>Aduan:www.aduansisa.my</td>
+	</tr>
+	<tr>
+	<td><a href="#page3"><img src="image/manual.png" /></td>
+	<td><strong>MANUAL</strong></br>Ini bagi memudahkan pengguna untuk mengetahui perjalanan sistem.</td>
+	</tr>
+	</table>
+	<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-action ui-btn-icon-left ui-btn-b">Bermasalah</a>
+<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="a" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+    <h1>FAHAM??</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">Ingin ke Manual?</h3>
+    <p>Anda Yakin.</p>        
+        <a href="#page3" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="flow">Ya</a>
+		<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Tidak</a>
+    </div>
+	</div>
+<!--footer -->
+  <div data-role="footer" data-position="fixed">
+  <h3>@2014 PPSPPA</h3>
+  </div>
+</div>
+</div>
+  
+<!--PAGE 3-->
+
+<div data-role="page" id="page3">
+	<!--header -->
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Utama">
+	<h3>Manual Pengguna</h3>
+	
+  </div>  
+  <!--content -->
+  <div role="main" class="ui-content">
+ <p><strong>Modul :</br> Jadual Kutipan Sampah & Pembersihan Awam</strong></br></br>Ini bagi memudahkan pengguna untuk mengetahui perjalanan sistem</p>
+ <ol>
+ <li>Disyorkan pengguna mengandungi atau memuat turun web browser Mozilla Firefox. Aplikasi Mozilla mengkehendaki pengguna menggunakan web browser Mozilla Firefox versi 3.0 dan ke atas.</li>
+ <li>Klik pada web browser berikut dan taipkan http://www.ppsppa.gov.my/1sprec. Antaramuka Menu Utama dipaparkan</li>
+ </ol>
+ <a href="#page2" class="ui-btn" data-transition="turn" data-direction="reverse">MENU UTAMA</a>
+
+ 
+<!--footer -->
+  <div data-role="footer" data-position="fixed">
+  <h3>@2014 PPSPPA</h3>
+  </div>
+
+  </div>
+</div>
+</body>
