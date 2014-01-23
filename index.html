@@ -5,35 +5,154 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="css/jquery.mobile.min.css" rel="stylesheet" type="text/css">
+<link href="css/themesmerah/merah.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile.icons.min.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile.structure.min.css" rel="stylesheet" type="text/css">
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.mobile.min.js"></script>
 
-
-
 </head>
 
 <body>
-<!--Step 1 aka Page 1 -->
-<div data-role="page" id="page1">
+<!--Page Utama-->
+<div data-role="page" id="pageutama">
+	<center>
+  <h2>SELAMAT DATANG</h2>
+  <img src="image/logo.jpg" />
+  <h3>PORTAL RASMI PPSPPA</br> VERSI WEB MOBILE</h3>
+  <p><strong>PERBADANAN PENGURUSAN SISA PEPEJAL DAN PEMBERSIHAN AWAM (PPSPPA)</strong></p>
+	<a href="#pagemisivisi" data-transition="slidefade" class="ui-btn ui-btn-inline">VISI & MISI</a>
+	<a href="#pagedirektori" data-transition="slidedown" class="ui-btn ui-btn-inline">DIREKTORI</a>
+	<a href="#pop1" data-rel="popup" data-transition="slidefade" class="ui-btn ui-btn-inline">PENAFIAN</a>
+	</center>
+	<div data-role="popup" id="pop1" align="center" data-dismissible="false">
+	<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+	<h3>Penafian:</h3>
+	<p>Perbadanan Pengurusan Sisa Pepejal Dan Pembersihan Awam tidak bertanggungjawab di atas kehilangan atau kerosakan disebabkan penggunaan mana-mana maklumat yang diperolehi daripada laman ini.</p></div>
+  </div>
+  </div>
+  
+<!--Page visi & misi--> 
+  <div data-role="page" id="pagemisivisi">
 	<!--header -->
-  <div data-role="header" data-position="fixed">
-	<h3>Step 1</h3>
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Utama">
+	<h3>Portal PPSPPA</h3>
 	
   </div>
   
   <!--content -->
-  <div role="main" class="ui-content">
+  <div role="main" class="ui-content" data-position="fixed">
+  <div data-role="collapsible-set">
+    <div data-role="collapsible">
+        <h3>Visi</h3>
+    <p>Menjadikan Malaysia sebuah negara bersih dan sejahtera</p>
+    </div>
+    <div data-role="collapsible">
+        <h3>Misi</h3>
+    <p>Melaksanakan dasar-dasar dan strategi pengurusan sisa pepejal dan pembersihan awam secara bersepadu dan efektif melalui peningkatan kesedaran awam, penggunaan teknologi terkini serta penguatkuasaan undang-undang bagi memastikan persekitaran yang bersih, sihat dan mapan</p>
+    </div>
+	<div data-role="collapsible">
+        <h3>Komitmen Kami</h3>
+    <p>Perbadanan berkomited untuk menjaga kebersihan negara dengan memberikan perkhidmatan pengurusan sisa pepejal dan pembersihan awam yang cekap, kos efektif dan bersepadu disamping mengutamakan kepuasan pelanggan.</p>
+    </div>
+</div>
+	</div>
+<!--footer -->
+  <div data-role="footer" data-position="fixed">
+  <div data-role="navbar">
+  <ul>
+  <li><a href="#pageutama" data-icon="home">UTAMA</a></li>
+  <li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist">MISI</a></li>
+  <li><a href="#pagedirektori" data-icon="star">DIREKTORI</a></li>
+  </ul>
+    </div>
+	</div>
+</div>
+
+<!--Page direktori--> 
+  <div data-role="page" id="pagedirektori">
+  
+  <!--panel-->
+  <div data-role="panel" id="panel1" data-display="overlay">
+  <h3> sila pilih :</h3>
+  <br />
+  <ul data-role="listview">
+  <li><a href="#pageutama">utama</a></li>
+  <li><a href="#pagemisivisi">misi & misi</a></li>
+  <li><a href="luar1.html" data-transition="turn">dokumen</a></li>
+  </ul>
+  </div>
+	<!--header -->
+  <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="Utama">
+  <a href="#panel1" data-icon="bars" data-iconpos="notext">menu</a>
+	<h3>Portal PPSPPA</h3>
 	
-
-
   </div>
   
-  <!--footer -->
+  <!--content -->
+  <div role="main" class="ui-content" data-position="fixed">
+  <ul data-role="listview" data-filter="true" data-filter-placeholder="Taipkan Nama"><!-- class="ui-listview-outer" data-inset="true">-->
+  <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="true">
+    <h2>Pejabat KPE</h2>
+    <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+      <li>
+	  <a href="#popdatuk" data-rel="popup" data-transition="slideup">
+        <img src="image/datukceo.png">
+    <h2>Ketua Pegawai Eksekutif</h2>
+    <p>Datuk Ab. Rahim b. Md. Nor</p></a>
+	<div data-role="popup" id="popdatuk">
+	<a href="tel:+60192806262" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a>
+	<a href="sms://+60192806262" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+	<a href="mailto:ab.rahim@swcorp.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Email</a>	
+	</div>
+    </ul>
+	<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+	<li>
+	<a href="#poppegkhas" data-rel="popup" data-transition="slidefade">
+        <img src="image/pegkhas.jpg">
+    <h2>Pegawai Khas KPE</h2>
+    <p>Mohd Azrul b. Azmi</p></a>
+	<div data-role="popup" id="poppegkhas">
+	<a href="tel:+60192806262" class="ui-btn">Telefon</a>
+	<a href="sms://+60192806262" class="ui-btn">SMS</a>
+	<a href="mailto:ab.rahim@swcorp.my" class="ui-btn">Email</a>
+	</div>
+    </ul>
+  </li>
+  </li>
+  <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="true">
+    <h2>Bahagian IT</h2>
+    <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+      <li>
+        <img src="image/pengit.png">
+    <h2>Pengarah</h2>
+    <p>Aznul Nizam b. Nasir</p></a>
+	<p>
+	<a href="tel:+60192806262" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a>
+	<a href="sms://+60192806262" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+	<a href="mailto:aznul@swcorp.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Email</a>
+	</p>
+    </ul>
+	<ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+	<li>
+        <img src="image/tpit.jpg">
+    <h2>Timbalan Pengarah</h2>
+    <p>Aida Suziliana bt. Salim</p></a>
+	<p>
+	<a href="tel:+60174948654" class="ui-btn ui-icon-phone ui-btn-icon-notext ui-corner-all ui-btn-inline">Telefon</a>
+	<a href="sms://+60174948654" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-inline">SMS</a>
+	<a href="mailto:aida@swcorp.my" class="ui-btn ui-icon-mail ui-btn-icon-notext ui-corner-all ui-btn-inline">Email</a>
+	</p>
+    </ul>
+	</div>
+<!--footer -->
   <div data-role="footer" data-position="fixed">
-  <h3>Loss Calculator</h3>
+  <h3>@2014 PPSPPA</h3>
   </div>
+</div>
+</div>
+  
 
 </div>
 
